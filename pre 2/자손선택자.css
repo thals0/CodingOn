@@ -1,0 +1,24 @@
+/* 직계자손이 아닌 모든 자식 */
+.grand li {
+    color:crimson;
+}
+
+/* 직계자손만 부름 */
+.grand > li{
+    color: blue;
+}
+
+/* grand 직계자손의 전체 자손 */
+.grand > li li {
+    background-color: yellow;
+}
+
+/* from 밑으로 다 ! */
+.from ~ li {
+    background-color: pink;
+}
+
+/* from 바로 밑 선택 */
+.from + li {
+    font-weight: bold;
+}

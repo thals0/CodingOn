@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 일기</title>
+    <style>
+        .content{
+            background-color: beige;
+        }
+
+        #timeline {
+            list-style:square;
+            background-color: rgb(247, 217, 180);
+        }
+
+        #memo {
+            background-color:rgb(210, 184, 145);
+        }
+
+        #text {
+            font-size: larger;
+            font-weight: bold;
+            color: brown;
+            text-decoration: underline;
+        }
+
+        a {
+            color: brown;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: red;
+            background-color: black;
+            font-size: larger;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 8px 12px;
+        }
+
+        span {
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <h1>오늘의 일기 👻</h1>
+    <p>
+        날씨: 흐림☁️ <br>
+        오늘의 노래🎧: 잘 부탁드립니다 - 익스
+    </p>
+    <hr>
+    <div class="content">
+    <h2>TimeLine</h2>
+    <ul id="timeline">
+        <li>8:30-10:00 기상 및 준비</li>
+        <li>10:00-12:00 팀프로젝트 발표 준비</li>
+        <li>12:00-13:00 이동 </li>
+        <li>13:00-19:00 KDT 사전 교육 1차시</li>
+        <li id="text">19:00-20:00 집간다 야호 !! </li>
+    </ul>
+
+    <h2>Memo</h2>
+    <ol type="i" id="memo">
+        <li>생각보다 학원까지 거리가 멀당! 이동시간 <b>읽을 책 준비할 것</b></li>
+        <li><b>안경 + 마스크 = Hell</b> 담부턴 렌즈 껴야지 
+            <a href="https://namu.wiki/w/%EC%BD%94%EB%A1%9C%EB%82%98%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4%EA%B0%90%EC%97%BC%EC%A6%9D-19">코로나</a> 망해라 !!</li>
+        <li>커피가 금값,, 주변 싼 커피집 알아보기</li>
+        <li>배고푸다 저녁 뭐먹지 <br>
+            <img src="https://cdn.maily.so/rhak68bvjkf2grk44hzemqfsun04" alt="메뉴 고르기" width="300px">
+        </li>
+    </ol>
+
+    <h3>Today Story</h3>
+    <p>
+        우당탕탕 이렇게 바쁜날 굉장히 좋다 !! <br>
+        앞으로도 화이팅 !!! 🤧🤧 <br>
+        <br>
+
+        <span>이거 만들면서 느꼈는데 난 디자인적인 감각이 하나도 없네 ;;ㅋ 에라이</span>
+    </p>
+    </div>
+
+</body>
+</html>

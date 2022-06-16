@@ -1,0 +1,27 @@
+ol li:first-child{
+    color: red;
+}
+
+/* 부모 속성 cascading 주의 */
+ol li:last-child {
+    color:blueviolet;
+}
+
+ol li:not(:last-child){
+    background-color: beige;
+}
+
+/* cascading 주의 */
+ol li:nth-child(2n) {
+    font-size:20px;
+}
+
+ol li:nth-child(odd) {
+    font-size:15px;
+}
+
+li:hover:not(.from) {
+    font-weight: 900;
+}
+
+

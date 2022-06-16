@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 링크 CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>cssStudy</title>
+
+    <!-- HTML 호출 순서 파악 -->
+    <!-- head 먼저 읽고, body 읽으므로 뒤에껄로 적용
+        컴퓨터가 무엇을 제일 마지막에 읽는지가 중요
+    인라인이 내부 css보다 우선순위가 높다. -->
+
+    <!-- 내부 CSS -->
+    <style>
+        p {
+            color: black;
+        }
+
+        .red {
+            color:red;
+        }
+
+        p.green{
+            color:green;
+        }
+
+        .green.blue{
+            color:aquamarine;
+        }
+
+        span.green.blue{
+            color:gold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 인라인 css -->
+    <span style="color: green; ; background-color: red" >KDT pre 2</span>
+    <p>Hello World!</p>
+    <hr>
+
+    <p>KDT</p>
+    <p class="red">KDT</p>
+    <p class="green">KDT</p>
+    <p class="green blue">KDT</p>
+    <span class="green blue">KDT</span>
+</body>
+</html>
