@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul>li {
+            background-color: orange;
+        }
+
+        ol>.cabbage {
+            background-color: greenyellow;
+        }
+        div .orange {
+            background-color: yellow;
+        }
+
+        .orange ~ p{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <ol>
+            <li>상추</li>
+            <li class="cabbage">양배추</li>
+            <li>토마토</li>
+        </ol>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+    <span class="orange">오렌지</span>
+
+    <ul>
+        <li>딸기</li>
+        <p>test 0</p>
+        <li>수박</li>
+        <li class="orange">오렌지</li>
+        <p>test 1</p>
+        <li>망고</li>
+        <p>test 2</p>
+        <li>사과</li>
+    </ul>
+</body>
+</html>
