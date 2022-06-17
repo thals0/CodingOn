@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스선택자</title>
+    <style>
+        a:hover{
+            color: red;
+        }
+        /* click하는 도중에만 반응 */
+        a:active{
+            font-size: 50px;
+        }
+        input:focus{
+            /* 비워놓아도 focus 효과 일어남  */
+            /* background-color: gainsboro; */
+        }
+        div{
+            width:200px;
+            height: 100px;
+            background-color: pink;
+        }
+        div:focus{
+            transition: 1s; /* 시간 차.. like 에니매이션 */
+            width: 300px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .animal li:first-child{
+            background-color: salmon;
+        }
+
+        .animal li:last-child{
+            background-color: sandybrown;
+        }
+        .animal *:nth-child(2n){
+            background-color: palevioletred
+        }
+        .animal *:not(.test){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>virtual Class Selector</h2>
+    <a href="http://naver.com">네이버 바로가기</a>
+    <br>
+    <input type="text">
+    <div tabindex="-1"></div>
+
+    <hr>
+    <h2>child Selector</h2>
+
+    <ol class="animal">
+        <li>호랑이</li>
+        <li>사자</li>
+        <li>여우</li>
+        <li>사슴</li>
+        <li>곰</li>
+    </ol>
+</body>
+</html>
