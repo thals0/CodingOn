@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS inherit</title>
+    <style>
+        .parent{
+            font-size: 1.5rem;
+            width: calc(50vw - 10vh);
+            height: calc(50vw - 10vh);
+            line-height: calc(50vw - 10vh);
+            background-color: skyblue;
+        }
+        .child{
+            font-size: 1.5em;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">parent
+        <div class="child">child</div>
+    </div>
+</body>
+</html>
