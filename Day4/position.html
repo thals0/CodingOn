@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            position:relative;
+            height: 3000px;
+        }
+        .wrap{
+            width: 500px;
+            height: 500px;
+            background-color: #82b3c9;
+            position:relative;
+        }
+        .container{
+            width: 300px;
+            /* height: 브라우저가 자식요소 합친 걸로 자동으로 설정해줌 */
+            background-color: #e6ffff;
+            position: relative;
+        }
+        .item{
+            background-color: #b3e5fc;
+            border: 2px dashed black;
+        }
+        .item1{
+            width: 100px;
+            height: 100px;
+            top: 30px;
+            left: 30px;
+            /* 기준점이 없으니까 이동 불가 */
+        }
+        .item2{
+            position: fixed;
+            width: 140px;
+            height: 70px;
+            top: 30px;
+            right: 30px;
+            opacity: 0.5;
+        }
+        .item3{
+            width: 70px;
+            height: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+        </div>
+    </div>
+</body>
+</html>
