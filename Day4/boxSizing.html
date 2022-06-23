@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxSizing</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .content-box{
+            background-color: salmon;
+            box-sizing: content-box;
+            border: 10px dashed black;
+            padding: 10px;
+        }
+        .border-box{
+            background-color: salmon;
+            box-sizing: border-box;
+            /* content box안에 border와 padding을 구겨넣음 */
+            border: 10px dashed black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">content</div><br>
+    <div class="border-box">border</div>
+</body>
+</html>
