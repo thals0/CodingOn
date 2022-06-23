@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow practice</title>
+    <style>
+        .parent1{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            overflow:visible;
+        }
+        .child1{
+            width: 400px;
+            height: 100px;
+            background-color: orange;
+        }
+        .parent2{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            overflow:hidden;
+        }
+        .child2{
+            width: 400px;
+            height: 100px;
+            background-color: orange;
+        }
+        .parent3{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            overflow:scroll;
+        }
+        .child3{
+            width: 400px;
+            height: 100px;
+            background-color: orange;
+        }
+        .parent4{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            overflow:auto;
+        }
+        .child4{
+            width: 400px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="child1"></div>
+    </div><br>
+    <div class="paren2t">
+        <div class="child2"></div>
+    </div><br>
+    <div class="parent3">
+        <div class="child3"></div>
+    </div><br>
+    <div class="parent4">
+        <div class="child4"></div>
+    </div><br>
+</body>
+</html>
