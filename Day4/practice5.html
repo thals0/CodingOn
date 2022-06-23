@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position practice</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        .wrap{
+            width: 500px;
+            height: 500px;
+            background-color: #82b3c9;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #e6ffff;
+            position: relative;
+        }
+        .item{
+            background-color: #b3e5fc;
+            border: 2px dashed black;
+        }
+        .item1{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 50px;
+            top:30px;
+        }
+        .item2{
+            position: absolute;
+            width: 140px;
+            height: 70px;
+            bottom: 100px;
+            right: 30px;
+        }
+        .item3{
+            width: 70px;
+            height: 140px;
+            position: fixed;
+            top: 100px;
+            right: 100px;
+        }
+        .item4{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 100px;
+            right:100px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </div>
+    <div class="item item4">4</div>
+</body>
+</html>
