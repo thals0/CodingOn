@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>visibility: hidden</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            cursor: pointer; 
+            /* hover시 cursor가 손가락으로 바뀜 */
+            display: inline-block;
+        }
+        .oppacity {
+            background-color: aqua;
+            opacity: 1;
+            /* opacity: 0; 해도 속성값(cursor: pointer;) 남아 있음 */
+        }
+        .visibility {
+            background-color: greenyellow;
+            visibility: visible;
+            /* visibility: hidden; 속성값도 사라짐 */
+        }
+        .display {
+            background-color: dodgerblue;
+            /* display:none; 자리도 사라짐 */
+        }
+        .last {
+            background-color: violet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="oppacity">oppacity</div>
+    <div class="visibility">visibility</div>
+    <div class="display">display</div>
+    <div class="last">last</div>
+</body>
+</html>
