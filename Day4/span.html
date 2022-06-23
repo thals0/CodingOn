@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>span tag</title>
+    <style>
+        span {
+            display: inline-block;
+            /* vertical-align: baseline; */
+            /* 글자가 없는 경우 박스의 최하단선을 baseline으로 잡음 */
+            /* vertical-align: bottom; */
+            width: 100px;
+            height: 100px;
+        }
+
+        .test1 {
+            background-color: orange;
+        }
+
+        .test2 {
+            font-size: 30px;
+            background-color: skyblue;
+        }
+
+        .test3 {
+            font-size: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="test1"></span>
+    <!-- 강제로 공백을 넣고 font-size를 똑같이 하면 정렬이 됨 -->
+    <!-- 혹은 vertical-align: bottom으로 바꿔주기 -->
+    <span class="test2">1</span>
+    <span class="test3">2</span>
+
+</body>
+
+</html>
