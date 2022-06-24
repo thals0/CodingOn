@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition practice</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+            display: flex;
+            /* flex 정렬은 애니메이션이 안먹네 */
+        }
+        .container:active{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items:flex-end;
+        }
+        .container .item{
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border: 1px dashed;
+            transition: 1s;
+            /* wrap시 윗 줄 box 5개 오게 하기 위함 */
+            box-sizing: border-box;
+        }
+        .item:hover{
+            border-radius: 50%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
