@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <title>media practice</title>
+    <style>
+        @media screen and (min-width:500px) {
+            body{
+                background-color: skyblue;
+            }
+        }
+        body{
+            text-align: center;
+            /* inline block은 글자 요소니까 */
+        }
+        .container>div{
+            display: inline-block;
+            height: 300px;
+            width: 18%;
+            /* 20%로 하면 공백 때문에 아래로 떨어짐 */
+            background-color: orange;
+            border:1px dashed red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- media로 마치 flex처럼 반응하도록 만들어보기 -->
+    <!-- flex가 얼마나 소중한지 알아보자 -->
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
