@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform practice</title>
+    <style>
+        body{
+            padding:40px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+        div.child{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            transition: 1s;
+        }
+        .child1:active{
+            transform: translateX(125px) rotate(45deg);
+        }
+        .child2:active{
+            transform: translateX(100px) scaleX(2);
+        }
+        .child3:active{
+            transform: perspective(200px) rotateY(180deg);
+        }
+        .child4:active{
+            transform: translateX(50px) skewX(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform Practice</h1><br>
+    <div>
+        <div class="child child1"></div>
+    </div><br>
+    <div>
+        <div class="child child2"></div>
+    </div><br>
+    <div>
+        <div class="child child3"></div>
+    </div><br>
+    <div>
+        <div class="child child4"></div>
+    </div>
+    <!-- class 명 지을때 underbar추천 더블클릭 시 한번에 복사 가능-->
+</body>
+</html>
