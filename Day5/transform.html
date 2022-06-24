@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        body{
+            padding: 40px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: darkblue;
+        }
+        div>.child{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            color: white;
+            background-color: pink;
+            opacity: 0.5;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        div>.child:active{
+            /* transform: translate(50px, 50px); */
+            /* transform: scale(1.5); */
+            /* transform: perspective(300px) rotateX(90deg); */
+            /* transform: skew(0, 45deg); */
+            transform: perspective(300px) rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="child">ABCD</div>
+    </div>
+</body>
+</html>
