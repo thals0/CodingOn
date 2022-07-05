@@ -1,0 +1,157 @@
+/* common */
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+/* header */
+header {
+  /* background-color: #32a552; */
+  border: 1px solid #c8c8c8;
+}
+
+header .inner {
+  background-color: white;
+  width: 1200px;
+  height: 64px;
+  padding: 0 32px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+/* header logo */
+header .inner .header__logo {
+  position: absolute;
+  /* 수직 중앙 정렬 시 기준 값 제공 */
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 2rem;
+}
+
+header .inner .header__logo a {
+  /* font-size: 32px; */
+  font-size: 2rem;
+  color: #1dc068;
+}
+
+header .inner .header__logo a i {
+  /* font-size: 32px; */
+  font-size: 2rem;
+  color: #1dc068;
+}
+
+/* header meau */
+header .inner .header__meau {
+  display: flex;
+  position: absolute;
+  margin: auto;
+  /* 부모요소 inner 기준 */
+  left: 200px;
+  /* 자기 자신의 50% 
+  transform: translate(-50%, 0); */
+  top: 0;
+  bottom: 0;
+  height: 32px;
+}
+
+header .inner .header__meau li {
+  padding: 8px 16px;
+}
+
+header .inner .header__meau li a:hover {
+  color: #1dc068;
+}
+
+/* header search */
+header .inner .header__search {
+  position: absolute;
+  right: 350px;
+  height: 36px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+header .inner .header__search input {
+  width: 148px;
+  height: 36px;
+  padding: 5px 9px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  /* 투명한 border 주기 */
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+}
+header .inner .header__search input:focus {
+  outline-color: #1dc068;
+  /* box-shadow: inset 0px 0px 0 2px #1dc068; */
+}
+header .inner .header__search input:hover {
+  border: 1px solid #c8c8c8;
+}
+
+header .inner .header__search i {
+  position: absolute;
+  right: 9px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1rem;
+}
+
+/* header participation */
+header .inner .header__participation {
+  position: absolute;
+  right: 220px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 1rem;
+}
+
+header .inner .header__participation a:hover {
+  color: #1dc068;
+}
+
+/* header btn */
+header .inner .header__btn {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 2rem;
+}
+header .inner .header__btn:hover {
+  cursor: pointer;
+}
+
+header .inner .header__btn .header__btn__login {
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  /* margin: 0px 8px 0px 0px; */
+  margin-right: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+header .inner .header__btn .header__btn__register {
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #ff7866;
+  color: white;
+}
+
+header .inner .header__btn .header__btn__register:hover {
+  background-color: #f96c59;
+}
