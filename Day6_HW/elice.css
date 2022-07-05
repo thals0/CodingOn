@@ -1,0 +1,121 @@
+/* common */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif !important;
+}
+body {
+  background-color: #ece6fe;
+}
+a {
+  text-decoration: none;
+}
+header {
+  font-size: 16px;
+  font-weight: 300;
+  transition: 0.7s;
+}
+header:hover {
+  background-color: white;
+}
+header .inner {
+  width: 1000px;
+  height: 72px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+}
+/* header logo */
+header .inner .header__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 32px;
+  margin: auto 0;
+}
+header .inner .header__logo a img {
+  width: 105px;
+  height: 32px;
+}
+/* header menu */
+header .inner .header__menu {
+  display: flex;
+  position: absolute;
+  left: 105px;
+  /* margin-left: 24px; */
+  top: 0;
+  bottom: 0;
+  height: 48px;
+  margin: auto 0 auto 24px;
+}
+header .inner .header__menu li {
+  margin-right: 14.44px;
+  padding: 16px 8px;
+  box-sizing: border-box;
+}
+header .inner .header__menu li:hover {
+  border-radius: 5px;
+  background-color: #f1f3f5;
+}
+header .inner .header__menu li a {
+  color: #222529;
+  margin: 8px;
+}
+.header__menu__service::after,
+.header__menu__elice::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.header__menu__service:hover::after,
+.header__menu__elice:hover::after {
+  transform: rotate(180deg);
+}
+/* header btn */
+header .inner .header__btn {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 48px;
+  margin: auto 0;
+}
+header .inner .header__btn .header__btn__login {
+  box-sizing: border-box;
+  width: 41.484px;
+  height: 48px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 48px;
+}
+header .inner .header__btn .header__btn__login:hover {
+  text-decoration: underline;
+}
+header .inner .header__btn .header__btn__login a {
+  color: #222529;
+}
+header .inner .header__btn .header__btn__inquiry {
+  width: 80.4px;
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #34393e;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 24px;
+}
+header .inner .header__btn .header__btn__inquiry:hover {
+  background-color: #4a5056;
+}
+header .inner .header__btn .header__btn__inquiry a {
+  color: white;
+}
