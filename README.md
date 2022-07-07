@@ -1,3 +1,3 @@
 # CodingOn - WEB
 
-Study HTML/CSS AND JS
+Study HTML/CSS and JavaScript
