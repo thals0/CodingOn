@@ -1,3 +1,3 @@
-# CodingOn - 웹
+# CodingOn - WEB
 
-HTML/CSS, JS 공부합니다! 
+Study HTML/CSS AND JS
