@@ -225,21 +225,24 @@
 // console.log(result);
 
 // 실습9
-// let pororo = {
-//   name: "pororo",
-//   age: 7,
-// };
-// console.log(pororo);
-// pororo.gender = "male";
-// pororo.height = 100;
-// console.log(pororo);
-// delete pororo.gender;
-// console.log(pororo);
-// // property 존재 여부 확인
-// console.log("birthDay" in pororo);
-// console.log("name" in pororo);
+let pororo = {
+  name: "pororo",
+  age: 7,
+  cute() {
+    console.log("귀엽습니다");
+  },
+};
+console.log(pororo);
+pororo.gender = "male";
+pororo.height = 100;
+console.log(pororo);
+delete pororo.gender;
+console.log(pororo);
+// property 존재 여부 확인
+console.log("birthDay" in pororo);
+console.log("name" in pororo);
 
-// for (key in pororo) {
-//   console.log(key);
-//   console.log(pororo[key]);
-// }
+for (key in pororo) {
+  console.log(key);
+  console.log(pororo[key]);
+}
