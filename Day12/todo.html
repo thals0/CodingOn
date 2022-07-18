@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font Eng-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./todo.css" />
+    <!-- JS -->
+    <script defer src="./todo.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <div class="contents">
+      <div class="input-part">
+        <input type="text" class="input-task" />
+        <input type="button" class="input-btn" value="+" />
+      </div>
+      <div class="list-part">
+        <ul class="todo-list">
+          <!-- HTML 요소에도 this 사용 가능 -->
+          <!-- <li onclick="deleteTask(this);">테스트용 li</li> -->
+        </ul>
+      </div>
+    </div>
+    <!-- <input type="checkbox" class="test" /> -->
+  </body>
+</html>
