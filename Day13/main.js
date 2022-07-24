@@ -74,7 +74,6 @@ promotionToggleBtn.addEventListener("click", function () {
 });
 
 // SCROLL ANIMATION
-let scrollYpos;
 window.addEventListener("scroll", function () {
   scrollYpos = window.scrollY;
   // console.log(scrollYpos);
@@ -109,8 +108,8 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.onload = () => {
-  // visual
+// VISUAL
+window.onload = function () {
   const visualInner = document.querySelector(".visual .inner");
   visualInner.classList.add("animate");
 };

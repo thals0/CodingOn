@@ -838,8 +838,8 @@ header .badges .badge {
   transition-delay: 0.8s;
 }
 
-.indonesia:hover::before,
-.indonesia:hover::after {
+.indonesia.animate:before,
+.indonesia.animate:after {
   opacity: 1;
   transition: 1.5s;
 }
